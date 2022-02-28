@@ -1,0 +1,53 @@
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.subreddits {
+  text-align: left;
+  color: white;
+  width: 33%;
+  min-width: 25%;
+  background-color: rgb(40, 149, 238);
+  border-radius: .5em;
+  height: 50%;
+}
+
+.subreddits a {
+  color: white;
+  text-decoration: none;
+}
+
+.subreddits ul {
+  list-style-type: none;
+}
+
+.subreddits ul li {
+  padding: 1rem 0;
+  padding-left: 0.5rem;
+  display: flex;
+  align-content: center;
+  border-bottom: .5px solid #fff;
+}
+
+.subreddits ul li:hover {
+  cursor: pointer;
+}
+
+.subreddits ul li:hover, .activeSub {
+  background-color: #fff;
+  color: rgb(40, 149, 238);
+  width: 90%;
+  border-radius: 5px;
+}
+
+.subreddits ul li img {
+ border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .subreddits {
+      display: none;
+  }
+}

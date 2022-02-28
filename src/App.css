@@ -28,11 +28,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(10px)
   }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(242, 246, 248);
+  padding: 3%;
 }
